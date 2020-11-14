@@ -7,8 +7,7 @@ class GildedRose {
         this.items = items; }
 
     public void updateQuality() {
-     //for (int i = 0; i < items.length; i++)
-         for (Item item : items)
+    for (Item item : items)
      {
          switch (item.getName()) {
              case "Aged Brie": updateQualityForAgedBrie(item);
@@ -76,10 +75,6 @@ class GildedRose {
     {
        item.setQuality(0);
     }
-
-
-
-
 
     //Les methodes increase et decrease
     public int IncreaseQualitybyone(Item item) {
